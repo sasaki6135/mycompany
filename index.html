@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ササキペイント｜塗装・不動産事業</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        matteBlack: '#121212',
+                        accentOrange: '#E67E22',
+                        accentYellow: '#F1C40F',
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif JP"', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #121212; color: #E5E7EB; line-height: 1.8; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .fade-in.is-visible { opacity: 1; transform: translateY(0); }
+        .section-padding { padding-top: 4rem; padding-bottom: 4rem; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-200">
+
+    <!-- ナビゲーション -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10 p-5 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-widest text-white">株式会社ササキペイント</div>
+        <div class="hidden md:flex space-x-6 text-sm tracking-wider">
+            <a href="#philosophy" class="hover:text-accentOrange transition">理念</a>
+            <a href="#realestate" class="hover:text-accentOrange transition">不動産</a>
+            <a href="#painting" class="hover:text-accentOrange transition">塗装</a>
+            <a href="#profile" class="hover:text-accentOrange transition">会社概要</a>
+            <a href="#contact" class="px-4 py-2 border border-accentOrange text-accentOrange hover:bg-accentOrange hover:text-white transition">お問い合わせ</a>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <header class="relative h-[80vh] flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-black/60 z-0"></div>
+        <div class="relative z-10 p-6">
+            <h1 class="font-serif text-4xl md:text-6xl mb-6 leading-tight">確かな技術で守り<br><span class="text-accentOrange">豊かな未来をひらく</span></h1>
+            <p class="text-lg text-gray-400 tracking-widest">創業15年以上の実績と信頼を、住まいのパートナーとして。</p>
+        </div>
+    </header>
+
+    <!-- 理念 -->
+    <section id="philosophy" class="section-padding fade-in">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-serif text-3xl mb-10 text-accentYellow text-center">— ご縁に感謝 —</h2>
+            <p class="text-lg leading-relaxed text-gray-300 text-left">
+                愛知県大府市を拠点に、塗装のプロフェッショナルとして15年以上の実績があります。<br>
+                私たちが最も大切にしているのは「ご縁に感謝」する心です。<br>
+                長年培った技術と地元での信頼を、不動産という新たなカタチで活かし、<br>
+                お客様の大切な資産を未来へ繋ぐお手伝いをさせていただきます。
+            </p>
+        </div>
+    </section>
+
+    <!-- 不動産 -->
+    <section id="realestate" class="section-padding bg-black/30 fade-in">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="font-serif text-3xl mb-6"><span class="text-accentOrange">不動産・塗装</span><br>住まいのことなら何でも相談できる会社</h3>
+                <p class="text-gray-400 mb-8">
+                    大切な家の売却や購入、そして塗り替え。人生の節目に関わることだからこそ、現場を知り尽くした私たちが、親身になって向き合います。仲介だけでなく、住まいのプロとして、お客様一人ひとりの希望に合わせた一番の方法を一緒に考えさせてください。
+                </p>
+            </div>
+            <div class="bg-gray-800 p-8 border border-white/10">
+                <h4 class="font-bold mb-4">主な取り扱い</h4>
+                <ul class="text-sm text-gray-400 space-y-2">
+                    <li>・不動産の売却相談</li>
+                    <li>・不動産の購入相談</li>
+                    <li>・不動産の仕入れ</li>
+                    <li>・住宅の塗装工事一式</li>
+                    <li>・住まいの有効活用のご提案</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 塗装 -->
+    <section id="painting" class="section-padding fade-in">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2">
+                <h3 class="font-serif text-3xl mb-6"><span class="text-accentYellow">塗装業</span><br>15年以上の実績で、住まいの印象をガラリと変える</h3>
+                <p class="text-gray-400 mb-8">
+                    大府市・名古屋市・東海市・半田市・常滑市を中心に、愛知県全域、三重県、岐阜県へ対応。職人の誇りをかけた技術で、大切な住まいをしっかりと守り抜きます。
+                </p>
+            </div>
+            <div class="bg-gray-800 p-8 border border-white/10 md:order-1">
+                <h4 class="font-bold mb-4">対応エリア</h4>
+                <p class="text-sm text-gray-400 leading-loose">
+                    愛知県：大府市・名古屋市・東海市・半田市・常滑市 ほか全域<br>
+                    三重県・岐阜県<br>
+                    ※その他地域もご相談ください
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section id="profile" class="section-padding bg-black/50 fade-in">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-serif text-3xl mb-12 text-center text-accentOrange">会社概要</h2>
+            <div class="space-y-6 text-sm md:text-base border-t border-white/10 pt-8">
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">会社名</span>
+                    <span class="w-2/3">株式会社ササキペイント</span>
+                </div>
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">代表者名</span>
+                    <span class="w-2/3">佐々木 　悟</span>
+                </div>
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">住所</span>
+                    <span class="w-2/3">愛知県大府市長草町下田ノ松45番地の5</span>
+                </div>
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">電話番号</span>
+                    <span class="w-2/3"><a href="tel:0562466135" class="text-blue-400 underline">0562-46-6135</a></span>
+                </div>
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">メール</span>
+                    <span class="w-2/3"><a href="mailto:sasaki@sasakipaint.com" class="text-blue-400 underline">sasaki@sasakipaint.com</a></span>
+                </div>
+                <div class="flex border-b border-white/5 py-4">
+                    <span class="w-1/3 text-gray-500">許可・免許</span>
+                    <span class="w-2/3">
+                        住宅塗装工事・各種塗装工事：愛知県知事許可（般）24-068057<br>
+                        宅地建物取引業：愛知県知事（1）第26277号
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問い合わせ -->
+    <section id="contact" class="section-padding fade-in">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="font-serif text-3xl mb-10 text-center text-accentOrange">お問い合わせ</h2>
+            <p class="mb-12 text-gray-400 text-left">
+                些細な疑問から、専門的なご相談まで。プロフェッショナルが誠心誠意お応えいたします。
+            </p>
+            <a href="mailto:sasaki@sasakipaint.com" class="block w-full bg-accentOrange text-white py-4 hover:bg-orange-600 transition tracking-widest font-bold text-center">
+                メールで相談する
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-sm text-gray-600">
+        <p>&copy; 株式会社ササキペイント All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
